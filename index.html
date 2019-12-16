@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code Quiz</title>
+	<link rel="shortcut icon" type="image/x-icon" href="questioncat.jpg" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<link rel="stylesheet" href="css/animate.css">
+
+
+	<script src="quiz.js"></script>
+
+</head>
+<body>
+	<h1>Capitals of the World Quiz</h1>
+	<h3>Press any key to begin the quiz.</h3>
+
+	<div class='stage'>
+		<div class="flashcard">
+			<div class='front'>
+				<div id="test_status"></div>
+
+				<div class="animated fadeIn" id="questionArea"></div>
+			</div>
+		</div>
+	</div>
+
+	<h3>
+		<div id="question">Question: 0/0</div>
+		<div class="scoreBoard" id='score'>Current Score: 0</div>
+		<div id='priorScores'></div>
+		<div id='timer'>Time</div>
+		<input type="button" onclick="alert(JSON.stringify(storedHscore, null, 0));" value="High Score" />
+		<p>Note: In order to see previous high scores, please finish at least ONE round of the quiz.<br/>you get 15 seconds per question. You will lose 15 seconds for each wrong answer!</p>
+		<button id='StartOver'>Reset</button>
+	</h3>
+
+</body>
+</html>
+
+

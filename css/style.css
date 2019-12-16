@@ -1,0 +1,85 @@
+body{
+  background-image: url(./world-map.jpg);
+}
+
+h1{
+  text-align: center;
+  font-family: cursive;
+  margin: 5% auto;
+  margin-bottom: 0.1em;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.stage {
+  -webkit-perspective: 1000;
+  vertical-align: top;
+  position: right;
+
+}
+
+.flashcard {
+  height: 300px;  
+  width: 550px; 
+  margin: 10% auto;
+  border: 2px solid gray; 
+  box-shadow: 4px 4px 4px #000;
+  -webkit-transform-style: preserve-3d;  
+  transition: all 0.7s;               
+  -webkit-transition: all 0.7s;
+  font-size: 25px;
+  background-color: #878b8b;
+}
+
+.flipped {
+  transform: rotatey(360deg);
+  -webkit-transform: rotatey(360deg); 
+}
+
+.front {
+  height: 300px;          
+  width: 550px;
+  position: absolute;    
+  text-align: center;   
+  -webkit-backface-visibility: hidden;       
+}
+
+.front p {
+  margin-top: 25%;       
+  font-size: 3em;
+}
+
+#questionArea{ 
+  padding:10px 40px 40px 40px; 
+}
+
+h2 {
+    position: center;
+    text-align: center;
+    width: auto;
+    font-size: 30px;
+    color: #000000;
+}
+
+h3{
+  position: center;
+  text-align: center;
+  width: auto;
+  color: #ffffff;
+}
+
+#score{
+}
+#priorScores{
+}
+#timer{
+}
+#StartOver{
+}
+#question{
+}
+#HighScore {
+}
+
+
+
